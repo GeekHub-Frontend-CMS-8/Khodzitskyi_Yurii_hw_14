@@ -19,10 +19,15 @@
         firstArray = [];
         secondArray = [];
         thirdArray = [];
-        for (let i=0;i<e.target.value;i++)  {
-            firstArray.push({
-                'elem': i
-            });
+        if (document.querySelector('#hanoi-heightOfTower').value >2 && document.querySelector('#hanoi-heightOfTower').value<9) {
+            for (let i=0;i<e.target.value;i++)  {
+                firstArray.push({
+                    'elem': i
+                });
+            }
+        }
+        else {
+            document.querySelector('#hanoi-heightOfTower').value = '';
         }
         renderView();
     }
