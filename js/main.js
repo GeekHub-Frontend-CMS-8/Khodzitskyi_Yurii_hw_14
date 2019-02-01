@@ -7,7 +7,22 @@ let firstArray = [
     },
     {
         'elem': 2
-    }
+    },
+    {
+        'elem': 3
+    },
+    {
+        'elem': 4
+    },
+    {
+        'elem': 5
+    },
+    {
+        'elem': 6
+    },
+    {
+        'elem': 7
+    },
     ];
 let secondArray = [];
 let thirdArray = [];
@@ -93,7 +108,7 @@ function drop(ev) {
     checkForDrop('div2',secondArray,ev);
     checkForDrop('div3',thirdArray,ev);
     renderView();
-    if (secondArray.length ===3) {
+    if (secondArray.length ===8) {
         alert('Congratulation, you have broken the universe -_-')
     }
 }
