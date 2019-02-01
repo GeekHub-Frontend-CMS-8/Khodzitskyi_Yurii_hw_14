@@ -4,7 +4,7 @@
     align-items: center;
     float: left;
     height: 190px;
-    width: 100px;
+    width: 150px;
     margin: 10px;
     padding: 10px;
     border: 1px solid black;
@@ -62,4 +62,9 @@
 }
 .hanoi-wrapper {
     display: flex;
+    flex-flow: row wrap;
+}
+.main-wrapper {
+    max-width: 700px;
+    margin: auto;
 }
